@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <title>
+        Famous places
+    </title>
+    <style>
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 30px;
+            text-align: center;
+        }
+     .places{
+       display: flex;
+       flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+      text-align: left;
+      /* max-width: fit-content; */
+      max-width: 1020px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+     }
+     img{
+        height: 200px;
+        width: 300px;
+        object-fit: cover;
+        margin-bottom: 15px;
+        border-radius: 10px;
+     }
+     .btn{
+        border-radius: 40px;
+        padding: 10px 30px;
+        cursor: pointer;
+        align-items: center;
+       font-weight: bold;
+     }
+     .london.btn{
+        margin-top: 40px;
+     }
+     .rome.btn{
+        margin-top: 40px;
+     }
+     p{
+        font-size: small;
+     }
+     @media (max-width: 992px) {
+            .places > div {
+                width: 40%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .places > div {
+                width: 90%;
+                
+            }}
+    </style>
+</head>
+<body>
+    <h1>
+        Most famous places
+    </h1>
+    <h5>
+        #recommended
+    </h5>
+    <div class="places">
+    <div class="london">
+        <h3>London</h3>
+        <img src="/images/london.jpg" alt="London">
+        <p>London, the capital of the United Kingdom, is a global <br>hub for finance, culture, and history</p>
+        <button class="btn">Discover place</button>
+    </div>
+    <div class="rome">
+        
+        <h3>Rome</h3>
+        <img src="/images/rome.jpg" alt="Rome">
+        <p>Rome, the "Eternal City," is Italy's capital and most<br> populous comune.</p> 
+        <button class="btn">Discover place</button>   
+    </div>
+    <div class="dubai">
+        <h3>Dubai</h3>
+        <img src="/images/dubai.jpg" alt="Dubai">
+        <p>Dubai is a city and emirate in the United Arab Emirates,<br> known for its modern architecture, luxury tourism, <br>and bustling business hub status.</p>
+        <button class="btn">Discover place</button>
+    </div>
+    <div class="iceland">
+        
+        <h3>Iceland</h3>
+        <img src="/images/iceland.jpg">
+        <p>Iceland is a Nordic island nation known for its dramatic <br>and diverse landscapes, including glaciers, volcanoes, <br>hot springs, and geysers.</p>
+        <button class="btn">Discover place</button>
+    </div>
+    
+    <div class="italy">
+        
+        <h3>Italy</h3>
+        <img src="/images/italy.jpg" alt="Italy">
+        <p>Italy is a boot-shaped country in Southern and Western<br> Europe, known for its rich history, art, fashion, and<br> cuisine.</p>
+        <button class="btn">Discover place</button>
+    </div>
+    <div class="switzerland">
+        
+        <h3>Switzerland</h3>
+        <img src="/images/switzerland.jpg" alt="Switzerland">
+        <p>Switzerland is a landlocked country in Central Europe <br>known for its stunning natural beauty, including the <br> Alps,and its high quality of life.</p>
+        <button class="btn">Discover place</button>
+    </div>
+</div>
+</body>
+</html>
