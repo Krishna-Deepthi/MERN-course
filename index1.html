@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <title>
+        Famous places
+    </title>
+    <style>
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            
+            text-align: center;
+        }
+     .places{
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: center;
+       gap: 30px;
+       margin-top: 30px;
+       text-align: left;
+       max-width: 1020px;
+       text-align: center;
+       margin-left: auto;
+       margin-right: auto;
+     }
+     img{
+        height: 200px;
+        width: 300px;
+        object-fit: cover;
+        margin-bottom: 15px;
+        border-radius: 10px;
+     }
+     .btn{
+        border-radius: 40px;
+        padding: 10px 30px;
+        cursor: pointer;
+        align-items: center;
+        font-weight: bold;
+     }
+     .london.btn{
+        margin-top: 40px;
+     }
+     .rome.btn{
+        margin-top: 40px;
+     }
+     p{
+        font-size: small;
+     }
+     @media (max-width: 992px) {
+            .places > div {
+                width: 40%;
+            }
+        }
+    @media (max-width: 600px) {
+            .places > div {
+                width: 90%;
+                
+            }}
+    .main_image{
+        position:relative ;
+        background-image: url(https://www.stayvista.com/blog/wp-content/uploads/2023/11/nature-photographer-29ezCWtMtnM-unsplash-1-scaled-1.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        width: 100%;
+        margin: 0;
+        background-repeat: no-repeat;
+       
+    }    
+    h2{
+        margin-left: 20px;
+        text-align: left;
+    }
+    .content {
+            position: absolute;
+            z-index: 2;
+            color: white;
+    }
+    @media (max-width:768px){
+        .content h1{
+            font-size: 32px;
+        }
+        .content h3{
+            font-size: 16px;
+        }
+        .content p{
+            font-size: 8px;
+        }
+        .content h2{
+            font-size: 24px;
+        }
+    }
+    #travel{
+        top: 0;
+        position: fixed;
+        background: none;
+    }
+    #heading1{
+        margin-top: 150px;
+        margin-left: 80px;
+        font-weight: bolder;
+    }
+    #heading2{
+      margin-left: 80px;  
+    }
+    #heading3{
+        margin-top: 80px;
+    }
+    #caption{
+        margin-left: 80px;
+        font-size: 15px;
+    }
+    #button1{
+        font-size: 15px;
+        color: white;
+        border-radius: 30px;
+        background: none;
+        border: 2px solid brown; 
+        cursor:pointer;
+        font-weight: bold;
+        padding: 10px 20px;
+    }
+    #button1:hover{
+        background-color: beige;
+        color:brown;
+        border-radius: 30px;
+    }
+    .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: 1;
+    }
+    .navbar{
+       position: fixed;
+       top: 0;
+       width: 100%;
+       z-index: 10; 
+      background: transparent;
+       color: white;
+       padding: 20px 40px;
+       box-sizing: border-box;
+    }    
+    @media (max-width: 768px) {
+    .navbar {
+       padding: 10px 20px;
+  }}
+    ul{
+       list-style-type: none;
+        margin:0;
+        padding:0;
+        display: flex;
+        justify-content: flex-end; 
+        align-items: center;
+        gap: 20px;
+    }
+    li a {
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 20px;
+      text-shadow: black;
+}
+    li a:hover{
+      background-color: beige;
+      color:brown;
+      border-radius: 30px;
+}
+</style>
+</head>
+<body>
+     <div class="main_image">
+         <div class="overlay"></div>
+        
+       <div class="content">
+        <h2 id="travel">Travel</h2>
+        
+     <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Tour Packages</a></li>
+            <li><a href="#">Contact</a></li> 
+            <li><a href="#">Explore places</a></li>     
+        </ul>
+     </nav>
+     <h1 id="heading1">
+        Book an exclusive
+     </h1>
+     <h3 id="heading2">
+        Home for your personal travel
+     </h3>
+     <p id="caption">
+      The journey of thousand miles begins with a single step  
+     </p>
+     <button id="button1">Explore places</button>
+     </div>
+    </div>
+    <h1 id="heading3">
+        Most famous places
+    </h1>
+    <h5>
+        #recommended
+    </h5>
+   <div class="places">
+    <div class="london">
+        <h3>London</h3>
+        <img src="/images/london.jpg" alt="London">
+        <p>London, the capital of the United Kingdom, is a global <br>hub for finance, culture, and history</p>
+        <button class="btn">Discover place</button>
+    </div>
+    <div class="rome">
+        
+        <h3>Rome</h3>
+        <img src="/images/rome.jpg" alt="Rome">
+        <p>Rome, the "Eternal City," is Italy's capital and most<br> populous comune.</p> 
+        <button class="btn">Discover place</button>   
+    </div>
+    <div class="dubai">
+        <h3>Dubai</h3>
+        <img src="/images/dubai.jpg" alt="Dubai">
+        <p>Dubai is a city and emirate in the United Arab Emirates,<br> known for its modern architecture, luxury tourism, <br>and bustling business hub status.</p>
+        <button class="btn">Discover place</button>
+    </div>
+    <div class="iceland">
+        
+        <h3>Iceland</h3>
+        <img src="/images/iceland.jpg">
+        <p>Iceland is a Nordic island nation known for its dramatic <br>and diverse landscapes, including glaciers, volcanoes, <br>hot springs, and geysers.</p>
+        <button class="btn">Discover place</button>
+    </div>
+    
+    <div class="italy">
+        
+        <h3>Italy</h3>
+        <img src="/images/italy.jpg" alt="Italy">
+        <p>Italy is a boot-shaped country in Southern and Western<br> Europe, known for its rich history, art, fashion, and<br> cuisine.</p>
+        <button class="btn">Discover place</button>
+    </div>
+    <div class="switzerland">
+        
+        <h3>Switzerland</h3>
+        <img src="/images/switzerland.jpg" alt="Switzerland">
+        <p>Switzerland is a landlocked country in Central Europe <br>known for its stunning natural beauty, including the <br> Alps,and its high quality of life.</p>
+        <button class="btn">Discover place</button>
+    </div>
+</div>
+</body>
+</html>
