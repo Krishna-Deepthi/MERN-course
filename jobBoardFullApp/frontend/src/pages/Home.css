@@ -1,0 +1,51 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1{
+    color:#FFD700;
+}
+button{
+   width: 150px;
+    padding: 0.1rem;
+    background: linear-gradient(135deg, #000000, #1a1a1a, #333333, #4d4d4d);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+ button:hover {
+   background: rgba(0, 0, 0, 0.7);
+    transform: scale(1.03);
+    border:2px solid blue;
+}
+.div1{
+  left: 0;
+}
+.parent{
+  background: white;
+width:100vw;
+height: 40vh;
+margin-top: 110px;
+display:flex;
+justify-content: center;
+flex-direction: row;
+gap:20px;
+align-items: center;
+  
+}
+.child{
+  background:#FFD700; 
+  width:300px;
+  height:100px;
+  padding:30px;
+  color:#000000;
+  font-size: 15px;
+  border-radius: 30px;
+ text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 30px;
+}
